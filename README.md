@@ -135,10 +135,12 @@ Install required libraries:
 ```bash
 pip install pygame pyserial
 
-Run:
-
+Run:    
 python radar.py
-Future Improvements
+```
+
+### Future Improvements
+
 WiFi wireless communication
 Web radar interface
 Target tracking algorithm
@@ -147,6 +149,6 @@ License
 
 MIT License
 
-Author
+### Author
 
 Zane
