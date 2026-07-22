@@ -6,6 +6,14 @@ This project uses an ESP32 to control a servo motor and HC-SR04 ultrasonic senso
 
 ---
 
+## Project Demo
+
+![Radar Demo](images/ESP32-Radar-Scanner1.jpg)
+![Radar Demo](images/ESP32-Radar-Scanner2.jpg)
+![Radar Demo](images/Pygame-ESP32-Radar.png)
+
+---
+
 ## Features
 
 - 180-degree servo scanning
@@ -24,7 +32,8 @@ This project uses an ESP32 to control a servo motor and HC-SR04 ultrasonic senso
 |---|---|
 | Microcontroller | ESP32-WROOM-32 |
 | Ultrasonic Sensor | HC-SR04 |
-| Servo Motor | Servo Motor |
+| Servo Motor | SG90 Servo Motor |
+| Servo Gimbal | Servo Pan/Tilt Bracket |
 | Buzzer | Passive Buzzer |
 
 
@@ -51,22 +60,23 @@ This project uses an ESP32 to control a servo motor and HC-SR04 ultrasonic senso
 
 ## Project Structure
 
-
+```
 ESP32-Radar-Scanner
 │
 ├── src
-│ └── main.cpp
+│   └── main.cpp
 │
 ├── lib
-│ ├── Servo
-│ ├── HCSR04
-│ └── Buzzer
+│   ├── Servo
+│   ├── HCSR04
+│   └── Buzzer
 │
 ├── radar.py
 │
 ├── platformio.ini
 │
 └── README.md
+```
 
 
 
@@ -74,20 +84,21 @@ ESP32-Radar-Scanner
 
 ## Working Principle
 
-
+```
 Servo rotates
-|
-↓
+      |
+      ↓
 HC-SR04 measures distance
-|
-↓
+      |
+      ↓
 ESP32 processes data
-|
-↓
+      |
+      ↓
 Serial communication
-|
-↓
+      |
+      ↓
 Python + Pygame radar display
+```
 
 
 
